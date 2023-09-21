@@ -1,0 +1,86 @@
+************************************* Invoked: — ‡Ô 21 17:02:52 2021
+[0] Arguments: C:\Users\user\Downloads\openmv-ide-windows-2.6.9.exe
+[10] Operations sanity check succeeded.
+[685] Loaded control script ":/metadata/installer-config/controlscript_qs.qs"
+[685] Using control script: ":/metadata/installer-config/controlscript_qs.qs"
+[2086] Control script callback "TargetDirectoryPageCallback" does not exist.
+[5692] Control script callback "StartMenuDirectoryPageCallback" does not exist.
+[7911] Tmp and install directories are on the same volume. Volume mount point: "C:\\" Free space available: "95.45 √¡"
+[7911] Installation space required: "660.25 Ã¡" Temporary space required: "256.00 Ã¡" Local repository size: "0.00 ·‡ÈÚ(Ó‚)"
+[7911] Control script callback "ReadyForInstallationPageCallback" does not exist.
+[9046] Control script callback "PerformInstallationPageCallback" does not exist.
+[9073] backup  operation: Mkdir
+[9074] 	- arguments: C:/Program Files (x86)/OpenMV IDE
+[9074] Done
+[9075] perform  operation: Mkdir
+[9075] 	- arguments: C:/Program Files (x86)/OpenMV IDE
+[9075] Done
+[9076] Starting elevated process "C:\\Users\\user\\Downloads\\openmv-ide-windows-2.6.9.exe" with arguments " --startserver PRODUCTION,{d94b4fa8-8725-4e5c-87bb-befb7bdce99e},{420a8e0b-4bf6-45d9-8163-9e981c85ea14}"
+[9751] Finished starting elevated process.
+[9781] perform  operation: Mkdir
+[9781] 	- arguments: C:/Program Files (x86)/OpenMV IDE
+[9785] Done
+[9787] Install size: 2 components
+[9861] backup org.qtproject.qtcreator.application operation: Extract
+[9861] 	- arguments: installer://org.qtproject.qtcreator.application/2.6.9openmv-ide-windows-2.6.9-installer-archive.7z, C:\Program Files (x86)\OpenMV IDE
+[9861] Done
+[9862] perform org.qtproject.qtcreator.application operation: Extract
+[9862] 	- arguments: installer://org.qtproject.qtcreator.application/2.6.9openmv-ide-windows-2.6.9-installer-archive.7z, C:\Program Files (x86)\OpenMV IDE
+[33172] Done
+[33172] backup org.qtproject.qtcreator.application operation: CreateShortcut
+[33172] 	- arguments: C:\Program Files (x86)\OpenMV IDE\bin\openmvide.exe, C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/OpenMV IDE.lnk, workingDirectory=C:/Users/user
+[33178] Done
+[33178] perform org.qtproject.qtcreator.application operation: CreateShortcut
+[33178] 	- arguments: C:\Program Files (x86)\OpenMV IDE\bin\openmvide.exe, C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/OpenMV IDE.lnk
+[33295] Done
+[33295] backup org.qtproject.qtcreator.application operation: CreateShortcut
+[33295] 	- arguments: C:\Program Files (x86)\OpenMV IDE\bin\openmvide.exe, C:\Users\user\Desktop/OpenMV IDE.lnk, workingDirectory=C:/Users/user
+[33300] Done
+[33301] perform org.qtproject.qtcreator.application operation: CreateShortcut
+[33301] 	- arguments: C:\Program Files (x86)\OpenMV IDE\bin\openmvide.exe, C:\Users\user\Desktop/OpenMV IDE.lnk
+[33322] Done
+[33323] backup org.qtproject.qtcreator.application operation: CreateShortcut
+[33323] 	- arguments: C:\Program Files (x86)\OpenMV IDE/OpenMVIDEUninst.exe, C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/Uninstall.lnk, workingDirectory=C:/Users/user
+[33327] Done
+[33328] perform org.qtproject.qtcreator.application operation: CreateShortcut
+[33328] 	- arguments: C:\Program Files (x86)\OpenMV IDE/OpenMVIDEUninst.exe, C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/Uninstall.lnk
+[33348] Done
+[33349] backup org.qtproject.qtcreator.application operation: Execute
+[33349] 	- arguments: {2,512}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\ftdi\ftdi.cmd
+[33349] Done
+[33349] perform org.qtproject.qtcreator.application operation: Execute
+[33349] 	- arguments: {2,512}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\ftdi\ftdi.cmd
+[33352] cmd" started, arguments: "/c C:\\Program Files (x86)\\OpenMV IDE\\share\\qtcreator\\drivers\\ftdi\\ftdi.cmd
+[33674] Done
+[33675] backup org.qtproject.qtcreator.application operation: Execute
+[33675] 	- arguments: {1,256}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\openmv\openmv.cmd
+[33675] Done
+[33675] perform org.qtproject.qtcreator.application operation: Execute
+[33675] 	- arguments: {1,256}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\openmv\openmv.cmd
+[33676] cmd" started, arguments: "/c C:\\Program Files (x86)\\OpenMV IDE\\share\\qtcreator\\drivers\\openmv\\openmv.cmd
+[33902] Done
+[33902] backup org.qtproject.qtcreator.application operation: Execute
+[33902] 	- arguments: {1,256}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\dfuse.cmd
+[33902] Done
+[33903] perform org.qtproject.qtcreator.application operation: Execute
+[33903] 	- arguments: {1,256}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\dfuse.cmd
+[33905] cmd" started, arguments: "/c C:\\Program Files (x86)\\OpenMV IDE\\share\\qtcreator\\drivers\\dfuse.cmd
+[34420] Done
+[34420] backup org.qtproject.qtcreator.application operation: Execute
+[34421] 	- arguments: {0,3010}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\vcr.cmd
+[34421] Done
+[34421] perform org.qtproject.qtcreator.application operation: Execute
+[34421] 	- arguments: {0,3010}, cmd, /c, C:\Program Files (x86)\OpenMV IDE\share\qtcreator\drivers\vcr.cmd
+[34422] cmd" started, arguments: "/c C:\\Program Files (x86)\\OpenMV IDE\\share\\qtcreator\\drivers\\vcr.cmd
+[35807] Done
+[35808] backup org.qtproject.qtcreator.application operation: License
+[35808] 	- arguments:
+[35808] Done
+[35808] perform org.qtproject.qtcreator.application operation: License
+[35808] 	- arguments:
+[35818] Done
+[35842] Writing maintenance tool: "C:\\Program Files (x86)\\OpenMV IDE/OpenMVIDEUninst.exe.new"
+[36414] Wrote permissions for maintenance tool.
+[36644] Maintenance tool restart: false.
+[36651] Control script callback "FinishedPageCallback" does not exist.
+[39721] run application as detached process: "C:\\Program Files (x86)\\OpenMV IDE\\bin\\openmvide.exe" () "C:/Users/user"
