@@ -160,7 +160,7 @@ void loop()
       eyeRight(0);
   }
 
-  if (Serial1.available() > 0) {
+  if (Serial2.available() > 0) {
     /*int startByte = Serial2.read();
       if (startByte == 255)
       {
@@ -170,7 +170,7 @@ void loop()
       Serial.println(condition);
       }  */
 
-    condition = Serial1.read();
+    condition = Serial2.read();
     Serial1.write(condition);
     Serial.print("Condition: ");
     Serial.println(condition);

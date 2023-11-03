@@ -13,8 +13,9 @@
 #include "POLOSKA.h"
 #include "NEVERNO.h"
 
-#define PIN 9 //matrix connection pin 
-#define mw 16 // ширина#define mh 8 // высота
+#define PIN 9 //matrix connec юtion pin 
+#define mw 16 // ширина
+#define mh 8 // высота
 #define NUMMATRIX (mw*mh) //количество светодиодов в матрице
 
 #define DISABLE_WHITE //для заполнения белым при старте - закомментировать, для выключения - разкомментировать
@@ -53,11 +54,7 @@ void strelka() {
   matrix->show();
   SHEST();
   delay(700);
-  matrix->show();+++++++++
-
-
-
-  
+  matrix->show();  
   SEM();
   delay(700);
   matrix->show();
@@ -96,8 +93,7 @@ void CHETIRE() {
   matrixStrelka[30] = 0x00F000;
   matrixStrelka[29] = 0x00F000;
   matrixStrelka[28] = 0x00F000;
-  /
-  /
+  //
   matrixStrelka[23] = 0x000000;
   matrixStrelka[22] = 0x00F000;
   matrixStrelka[21] = 0x00F000;
@@ -245,7 +241,7 @@ void setup() {
 
 int condition = -1;
 uint32_t myTimer1 = millis();
-int rep = 2, COND = 0;
+int rep = 5, COND = 0;
 bool flag_nach = true, tag_flag0 = true, tag_flag1 = true, tag_flag2 = true, tag_flag3 = true, tag_flag4 = true, tag_flag5 = true;
 
 void loop() {
@@ -253,7 +249,7 @@ void loop() {
   // loop back to the top left corner
   // 8x8 => 1, 16x8 => 2, 17x9 => 6
   static uint8_t pixmap_count = ((mw + 7) / 8) * ((mh + 7) / 8);
-  mx = 0, bmy = 0;
+  static uint8_t bmx = 0, bmy = 0;
   //matrix->fillRect(bmx, bmy, bmx + 16, bmy + 8, LED_BLACK); //очистка матрицы
   //matrix->drawBitmap();
   /*!
@@ -269,7 +265,7 @@ void loop() {
 
   if (flag_nach) { //начальное состояние. Удивление+шевеление ротиком!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     matrix->drawRGBBitmap(0, 0, (const uint16_t *) surprised, 16, 8); matrix->show();
-    delay(6100);
+    delay(7650);
     Serial.println("1");
     while (rep--) {
       matrix->drawRGBBitmap(0, 0, (const uint16_t *) default_bitmap, 16, 8); matrix->show();
@@ -277,9 +273,9 @@ void loop() {
       matrix->drawRGBBitmap(0, 0, (const uint16_t *) dvizh, 16, 8); matrix->show();
       delay(400);
     }
-    rep = 2;
+    rep = 6;
     matrix->drawRGBBitmap(0, 0, (const uint16_t *) default_bitmap, 16, 8); matrix->show();
-    delay(5000);
+    delay(3000);
     Serial.println("2");
     while (rep--) {
       matrix->drawRGBBitmap(0, 0, (const uint16_t *) default_bitmap, 16, 8); matrix->show();
@@ -341,7 +337,14 @@ void loop() {
         if (tag_flag1) {
           Serial.println("case 2");
           matrix->drawRGBBitmap(0, 0, (const uint16_t *) POLOSKA, 16, 8); matrix->show();
-          strelka();
+          // strelka();
+          rep = 6;
+          while (rep--) {
+            matrix->drawRGBBitmap(0, 0, (const uint16_t *) default_bitmap, 16, 8); matrix->show();
+            delay(400);
+            matrix->drawRGBBitmap(0, 0, (const uint16_t *) dvizh, 16, 8); matrix->show();
+            delay(400);
+          }
           OCHISTKA();
           tag_flag1 = false;
         }

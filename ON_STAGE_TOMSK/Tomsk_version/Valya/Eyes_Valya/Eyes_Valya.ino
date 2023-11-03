@@ -37,12 +37,12 @@ bool flag_pov1 = true, flag_pov2 = true, flag_pov3 = true, flag_pov4 = true, fla
 
 void setup()
 {
-  Serial.begin(9600);         //инициализируем UART USB
+  Serial.begin(115200);         //инициализируем UART USB
   Serial1.begin(9600);        //инициализируем UART связи со светом
   Serial2.begin(9600);        //инициализируем UART связи с платформой
   Serial3.begin(9600);        //инициализируем UART связи с плеером
   Serial.print("\tПривет!\n");
-  myDFPlayer.begin(Serial1);  //инициализируем плеер
+  myDFPlayer.begin(Serial3);  //инициализируем плеер
   myDFPlayer.volume(30);      //от 10 до 30
 
   eyelidLeft.attach(12);      //инициализируем сервопривод левых век 12
